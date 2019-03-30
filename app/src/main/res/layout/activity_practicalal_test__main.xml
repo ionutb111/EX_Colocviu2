@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalalTest_MainActivity">
+
+    <Button
+        android:id="@+id/changeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change activity"
+        android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/leftTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left Top"
+            android:layout_below="@id/changeActivity"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/rightTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Top"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/changeActivity"/>
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/leftTop"/>
+
+    <Button
+        android:id="@+id/leftBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Left"
+        android:layout_below="@id/center"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/rightBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Right"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/center"/>
+
+    <EditText
+        android:id="@+id/sablon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rightBottom"
+        android:enabled="false"
+        />
+
+
+
+</RelativeLayout>
